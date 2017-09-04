@@ -1,7 +1,7 @@
 import numpy as np
 
 m, n, data, desired_outputs = 0, 0, [], []
-with open('../creditcard 1000 entries.csv') as f:
+with open('creditcard 1000 entries.csv') as f:
     while True:
         inp = f.readline().strip()
         if inp is '': break

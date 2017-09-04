@@ -2,7 +2,7 @@ import numpy as np
 
 m, n, data, desired_outputs = 0, 0, [], []
 
-with open('../creditcard 1000 entries.csv') as f:
+with open('creditcard 1000 entries.csv') as f:
     while True:
         inp = f.readline().strip()
         if inp is '': break
@@ -13,9 +13,9 @@ with open('../creditcard 1000 entries.csv') as f:
         inp[n-1] = 1
         data.append(inp)
 
-train, test, weights, no_of_iterations, c = 600, 536, [], 100, 0.3
+train, test, weights, no_of_iterations, c = 600, 536, [], 45, 0.3
 
-with open('../Init_weights.txt') as f:
+with open('Init_weights.txt') as f:
     weights = f.readline().strip().split(',')
     for i in range(0, n): weights[i] = float(weights[i])
 
